@@ -41,12 +41,18 @@
 {trigger: "cb", replacement: "^{3}", options: "mA"},
 {trigger: "rd", replacement: "^{$0}$1", options: "m"},
 {trigger: "_", replacement: "_{$0}$1", options: "m"},
+{trigger: "^", replacement: "^{$0}$1", options: "m"},
 {trigger: "sts", replacement: "_\\text{$0}", options: "mA"},
 {trigger: "sq", replacement: "\\sqrt{ $0 }$1", options: "mA"},
 {trigger: "//", replacement: "\\frac{$0}{$1}$2", options: "mA"},
 {trigger: "ee", replacement: "e^{ $0 }$1", options: "mA"},
 {trigger: "invs", replacement: "^{-1}", options: "mA"},
 {trigger: /([A-Za-z])(\d)/, replacement: "[[0]]_{[[1]]}", options: "rmA", description: "Auto letter subscript", priority: -1},
+{trigger: "v.", replacement: "\\vdots", options: "m"},
+{trigger: "h.", replacement: "\\dots", options: "m"},
+
+{trigger: "over", replacement: "\\overset{$0}$1", options: "m"},
+{trigger: "under", replacement: "\\underset{$0}$1", options: "m"},
 
 {trigger: /([^\\])(exp|log|ln)/, replacement: "[[0]]\\[[1]]", options: "rmA"},
 {trigger: "conj", replacement: "^{*}", options: "mA"},
