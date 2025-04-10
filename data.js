@@ -47,7 +47,7 @@
 {trigger: "//", replacement: "\\frac{$0}{$1}$2", options: "mA"},
 {trigger: "ee", replacement: "e^{ $0 }$1", options: "mA"},
 {trigger: "invs", replacement: "^{-1}", options: "mA"},
-{trigger: /([A-Za-z])(\d)/, replacement: "[[0]]_{[[1]]}", options: "rmA", description: "Auto letter subscript", priority: -1},
+{trigger: /([A-Za-z])(\d)/, replacement: "[[0]]_[[1]]", options: "rmA", description: "Auto letter subscript", priority: -1},
 {trigger: "v.", replacement: "\\vdots", options: "m"},
 {trigger: "h.", replacement: "\\dots", options: "m"},
 
@@ -88,14 +88,14 @@
 {trigger: "cdot", replacement: "\\cdot", options: "mA"},
 {trigger: "tilde", replacement: "\\tilde{$0}$1", options: "mA"},
 {trigger: "und", replacement: "\\underline{$0}$1", options: "mA"},
-{trigger: "vec", replacement: "\\vec{$0}$1", options: "mA"},
+{trigger: "vv", replacement: "\\vec{$0}$1", options: "mA"},
 
   // More auto letter subscript
-{trigger: /([A-Za-z])^(\d\d)/, replacement: "[[0]]^{[[1]]}", options: "rmA"},
-{trigger: /([A-Za-z])_(\d\d)/, replacement: "[[0]]_{[[1]]}", options: "rmA"},
-{trigger: /\\hat{([A-Za-z])}(\d)/, replacement: "\\hat{[[0]]}_{[[1]]}", options: "rmA"},
-{trigger: /\\vec{([A-Za-z])}(\d)/, replacement: "\\vec{[[0]]}_{[[1]]}", options: "rmA"},
-{trigger: /\\mathbf{([A-Za-z])}(\d)/, replacement: "\\mathbf{[[0]]}_{[[1]]}", options: "rmA"},
+{trigger: /([A-Za-z])^(\d\d)/, replacement: "[[0]]^[[1]]", options: "rmA"},
+{trigger: /([A-Za-z])_(\d\d)/, replacement: "[[0]]_[[1]]", options: "rmA"},
+{trigger: /\\hat{([A-Za-z])}(\d)/, replacement: "\\hat[[0]]_[[1]]", options: "rmA"},
+{trigger: /\\vec{([A-Za-z])}(\d)/, replacement: "\\vec[[0]]_[[1]]", options: "rmA"},
+{trigger: /\\mathbf{([A-Za-z])}(\d)/, replacement: "\\mathbf[[0]]_[[1]]", options: "rmA"},
 
 {trigger: "xnn", replacement: "x_{n}", options: "mA"},
 {trigger: "\\xii", replacement: "x_{i}", options: "mA", priority: 1},
@@ -114,7 +114,8 @@
 {trigger: "lim", replacement: "\\lim_{ ${0:n} \\to ${1:\\infty} } $2", options: "mA"},
 {trigger: "+-", replacement: "\\pm", options: "mA"},
 {trigger: "-+", replacement: "\\mp", options: "mA"},
-{trigger: "...", replacement: "\\dots", options: "mA"},
+{trigger: "..", replacement: "\\dots", options: "mA"},
+{trigger: "v..", replacement: "\\vdots", options: "mA"},
 {trigger: "nabl", replacement: "\\nabla", options: "mA"},
 {trigger: "del", replacement: "\\nabla", options: "mA"},
 {trigger: "xx", replacement: "\\times", options: "mA"},
@@ -160,6 +161,7 @@
 {trigger: "NN", replacement: "\\mathbb{N}", options: "mA"},
 {trigger: "KK", replacement: "\\mathbb{K}", options: "mA"},
 {trigger: "QQ", replacement: "\\mathbb{Q}", options: "mA"},
+{trigger: "EE", replacement: "\\mathbb{E}", options: "mA"},
 
   // Handle spaces and backslashes
 
