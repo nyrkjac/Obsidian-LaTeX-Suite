@@ -132,6 +132,9 @@
 {trigger: "prop", replacement: "\\propto", options: "mA"},
 
 {trigger: "<->", replacement: "\\leftrightarrow ", options: "mA"},
+{trigger: "<-->", replacement: "\\longleftrightarrow ", options: "mA"},
+{trigger: "<=>", replacement: "\\Leftrightarrow ", options: "mA"},
+{trigger: "<==>", replacement: "\\Longleftrightarrow ", options: "mA"},
 {trigger: "->", replacement: "\\to", options: "m"},
 {trigger: "-->", replacement: "\\longrightarrow ", options: "mA"},
 {trigger: "!>", replacement: "\\mapsto", options: "mA"},
