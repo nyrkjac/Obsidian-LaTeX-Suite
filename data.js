@@ -48,8 +48,6 @@
 {trigger: "ee", replacement: "e^{ $0 }$1", options: "mA"},
 {trigger: "invs", replacement: "^{-1}", options: "mA"},
 {trigger: /([A-Za-z])(\d)/, replacement: "[[0]]_[[1]]", options: "rmA", description: "Auto letter subscript", priority: -1},
-{trigger: "v.", replacement: "\\vdots", options: "m"},
-{trigger: "h.", replacement: "\\dots", options: "m"},
 
 {trigger: "over", replacement: "\\overset{$0}$1", options: "m"},
 {trigger: "under", replacement: "\\underset{$0}$1", options: "m"},
@@ -74,7 +72,7 @@
 // {trigger: "([a-zA-Z])dot", replacement: "\\dot{[[0]]}", options: "rmA", priority: -1},
 {trigger: "([a-zA-Z])ddot", replacement: "\\ddot{[[0]]}", options: "rmA", priority: 1},
 {trigger: "([a-zA-Z])tilde", replacement: "\\tilde{[[0]]}", options: "rmA"},
-{trigger: "([a-zA-Z])und", replacement: "\\underline{[[0]]}", options: "rmA"},
+{trigger: "([a-zA-Z])und", replacement: "\\underline{[[0]]}", options: "rm"},
 {trigger: "([a-zA-Z])vec", replacement: "\\vec{[[0]]}", options: "rmA"},
 {trigger: "([a-zA-Z]),\\.", replacement: "\\mathbf{[[0]]}", options: "rmA"},
 {trigger: "([a-zA-Z])\\.,", replacement: "\\mathbf{[[0]]}", options: "rmA"},
@@ -87,7 +85,7 @@
 {trigger: "ddot", replacement: "\\ddot{$0}$1", options: "mA"},
 {trigger: "cdot", replacement: "\\cdot", options: "mA"},
 {trigger: "tilde", replacement: "\\tilde{$0}$1", options: "mA"},
-{trigger: "und", replacement: "\\underline{$0}$1", options: "mA"},
+{trigger: "und", replacement: "\\underline{$0}$1", options: "m"},
 {trigger: "vv", replacement: "\\vec{$0}$1", options: "mA"},
 
   // More auto letter subscript
@@ -120,6 +118,7 @@
 {trigger: "del", replacement: "\\nabla", options: "mA"},
 {trigger: "xx", replacement: "\\times", options: "mA"},
 {trigger: "**", replacement: "\\cdot", options: "mA"},
+{trigger: "c.", replacement: "\\cdot", options: "mA"},
 {trigger: "para", replacement: "\\parallel", options: "mA"},
 
 {trigger: "===", replacement: "\\equiv", options: "mA"},
