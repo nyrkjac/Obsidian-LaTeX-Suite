@@ -15,6 +15,7 @@ Additions for easier math:
 - `c.` for `\cdot`
 - `<-->`, `<=>`,`<==>`,`->`,`-->` for different arrows
 - `KK`,`QQ`,`EE` to put these letters into the `mathbb` environment
+- `mC`,`mB` to activate `mathcal`,`mathbb` environment respectively
 
 commands that don't activate without `Tab` 
 - `rd`,`_` for super-/subscript respectively
