@@ -152,6 +152,8 @@
 {trigger: "set", replacement: "\\{ $0 \\}$1", options: "mA"},
 {trigger: "e\\xi sts", replacement: "\\exists", options: "mA", priority: 1},
 
+{trigger: "mC", replacement: "\\mathcal{$0}$1", options: "mA"},
+{trigger: "mB", replacement: "\\mathbb{$0}$1", options: "mA"},
 {trigger: "LL", replacement: "\\mathcal{L}", options: "mA"},
 {trigger: "HH", replacement: "\\mathcal{H}", options: "mA"},
 {trigger: "CC", replacement: "\\mathbb{C}", options: "mA"},
