@@ -15,13 +15,17 @@ Additions for easier math:
 - `c.` for `\cdot`
 - `<-->`, `<=>`,`<==>`,`->`,`-->` for different arrows
 - `KK`,`QQ`,`EE` to put these letters into the `mathbb` environment
+- `NNN` for `_{n \in \mathbb{NN}}`
 - `mC`,`mB` to activate `mathcal`,`mathbb` environment respectively
+- `axi` for `$(\\text{}):$` to type axiom names
 
 commands that don't activate without `Tab` 
 - `rd`,`_` for super-/subscript respectively
 - `und` for `underline`
 - `<>` for `<$0>$1</$0>$2` to use html-tags
 - `abs` for `||`
+- `oline` for `overline`
+- `ang`,`mang` for `angle` and `measuredangle`
 
 deleted commands:
 - `mk` for inline math
