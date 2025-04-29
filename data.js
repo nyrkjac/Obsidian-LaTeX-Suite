@@ -35,6 +35,7 @@
   // Text environment
 {trigger: "text", replacement: "\\text{$0}$1", options: "mA"},
 {trigger: "\"", replacement: "\\text{$0}$1", options: "mA"},
+{trigger: "axi", replacement: "$(\\text{$0}):$$1", options: ""},
 
   // Basic operations
 {trigger: "sr", replacement: "^{2}", options: "mA"},
@@ -51,6 +52,9 @@
 
 {trigger: "over", replacement: "\\overset{$0}$1", options: "m"},
 {trigger: "under", replacement: "\\underset{$0}$1", options: "m"},
+{trigger: "oline", replacement: "\\overline{$0}$1", options: "m"},
+{trigger: "ang", replacement: "\\angle", options: "m"},
+{trigger: "mang", replacement: "\\measuredangle", options: "m"},
 
 {trigger: /([^\\])(exp|log|ln)/, replacement: "[[0]]\\[[1]]", options: "rmA"},
 {trigger: "conj", replacement: "^{*}", options: "mA"},
@@ -163,6 +167,8 @@
 {trigger: "KK", replacement: "\\mathbb{K}", options: "mA"},
 {trigger: "QQ", replacement: "\\mathbb{Q}", options: "mA"},
 {trigger: "EE", replacement: "\\mathbb{E}", options: "mA"},
+{trigger: "\\mathbb{N}N", replacement: "\_{n \\in \\mathbb{N}}", options: "mA", priority:1},
+
 
   // Handle spaces and backslashes
 
