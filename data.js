@@ -124,6 +124,7 @@
 {trigger: "**", replacement: "\\cdot", options: "mA"},
 {trigger: "c.", replacement: "\\cdot", options: "mA"},
 {trigger: "para", replacement: "\\parallel", options: "mA"},
+{trigger: "ddots", replacement: "\\ddots", options: "mA"},
 
 {trigger: "===", replacement: "\\equiv", options: "mA"},
 {trigger: "!=", replacement: "\\neq", options: "mA"},
