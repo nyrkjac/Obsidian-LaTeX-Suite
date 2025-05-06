@@ -26,6 +26,7 @@ commands that don't activate without `Tab`
 - `abs` for `||`
 - `oline` for `overline`
 - `ang`,`mang` for `angle` and `measuredangle`
+- `ddot` for double dots above letter
 
 deleted commands:
 - `mk` for inline math
