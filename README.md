@@ -18,6 +18,7 @@ Additions for easier math:
 - `NNN` for `_{n \in \mathbb{NN}}`
 - `mC`,`mB` to activate `mathcal`,`mathbb` environment respectively
 - `axi` for `$(\\text{}):$` to type axiom names
+- `ddots` for diagonal dots
 
 commands that don't activate without `Tab` 
 - `rd`,`_` for super-/subscript respectively
